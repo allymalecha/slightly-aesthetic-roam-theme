@@ -1,0 +1,268 @@
+/* Slighly aesthetic roam theme that is easy on the eyes and not too complex
+By Ally but with a lot of help from smart individuals on Reddit
+V 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+/* General formatting of the site */
+/* Make page width wider */
+.roam-block-container,.roam-block,.rm-block-text {max-width: 900px;}
+
+.roam-center > div {padding-right: 20px !important;padding-left: 20px !important;}
+/* end page widening */
+
+body { /*    Background color   */
+    background-color: #E2E2E2;
+}
+
+div { 
+    font-family: 'Work Sans', serif;
+}
+
+.level2 {
+    font-family: 'Work Sans', serif;
+}
+
+/* Header bar */
+.roam-topbar { 
+    background-color: #CECBDB;
+}
+
+
+/* Left side bar style*/
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+        background-color: #2C4251;
+    color: #CECBDB;
+  font-size: 16px;
+}
+
+/* Change sideboard to all one color */
+.roam-body .roam-app .roam-sidebar-container {
+background-color: #2C4251 !important;
+}
+
+/* Change color of the email address in upper left */
+.bp3-button div {
+color: #58A4B0 !important;
+}
+
+/* Left side Bar Open/Close Icon and star/calendar icons in header */
+.bp3-icon-star-empty::before {
+    content: "🌟";
+}
+
+.bp3-icon-graph:before,
+.bp3-icon-star:before,
+.bp3-icon-star-empty:before,
+.bp3-icon-more:before,
+.bp3-icon-menu:before,
+.bp3-button:before, 
+.bp3-minimal:before, 
+.bp3-small:before, 
+.bp3-icon-filter {
+  color: #58A4B0 !important;
+}
+/* Left side Bar Hovering */
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  color: black;
+  background-color: #58A4B0;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover { 
+  color: black;
+  background-color: #58A4B0;
+}
+
+/*Change Roam Research logo color to match theme*/
+#roam-sidebar-logo {
+    color:#CECBDB
+}
+        
+/*/ Roam Search Bar /*/
+
+/* Roam Search Box Placeholder Text Color */
+.bp3-input::placeholder,
+.bp3-input-group > .bp3-icon {
+    color: #58A4B0;
+}
+
+/* Input Text Color in Search Bar */
+.bp3-input {
+  color: black;
+}
+
+/* New Page Button Color */
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
+  color: #58A4B0;
+}
+
+.bp3-button .bp3-minimal .bp3-intent-success {
+    color: #58A4B0   
+}
+
+.bp3-button .bp3-minimal .bp3-intent-success a:hover {
+    background-color: #CECBDB;   
+}
+
+/* Body */
+
+/* tree style */
+.block-border-left { 
+    border-left: 2px solid #58A4B0;
+}
+
+/* Bullets */
+.controls .simple-bullet-outer .simple-bullet-inner {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #58A4B0; 
+}
+.roam-bullet-closed { 
+    background-color:  #CECBDB;
+}
+
+/* Markdown link titles */
+
+.roam-app a {
+  color: #58A4B0;
+}
+
+.roam-app a:focus, 
+.roam-app a:hover {
+  color: #58A4B0;
+  text-decoration: underline;
+}
+
+/* external link color */
+a.rm-alias.rm-alias-external {
+    color: #106ba3 !important;
+}
+
+/* the currently selected block */
+ .rm-block-input{ 
+  color: #2C4251 !important;
+    font-family: 'Work Sans', serif;
+     background-color:  #CECBDB;
+     } 
+
+
+/* Tagging style */
+.rm-page-ref-tag { /* hashtags */
+    color: #EBFAFF !important;
+    background-color: #58A4B0;
+    border-radius: 10px;
+    padding: 2px 3px 2px 3px;
+}
+
+/* external link color */
+
+a.rm-alias.rm-alias-external {
+    color: #58A4B0 !important;
+}
+
+/* Header Styles */
+
+.roam-app h1 { /* styles page titling */
+    color: #2C4251 !important;
+    font-weight: bold;
+  font-size: 36px;
+  
+}
+.roam-app h2 { /* styles page titling */
+    color: #2C4251 !important;
+    font-weight: bold;
+  font-size: 32px;
+}
+ .roam-app h3 { /* styles page titling */
+    color: #2C4251 !important;
+    font-weight: bold;
+  font-size: 24px;
+}
+.roam-app h4 { /* styles page titling */
+    color: #2C4251 !important;
+    font-weight: bold;
+  font-size: 18px;   
+}
+
+/* Reference Titles */
+.roam-article > div:last-child a { 
+    color: #2C4251 !important;
+}
+
+/* Reference Boxes */
+.rm-reference-item { 
+  background-color: #EBFAFF;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Right side bar color */
+#right-sidebar {
+    background-color: #EBFAFF !important;
+}
+
+
+/* Right side bar reference boxes */
+#right-sidebar .rm-reference-item { 
+  background-color: #E2E2E2;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/*Wraps text when I'm doing an inline search with [[]] or (())*/
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+/* hover color in search bar*/
+.rm-mentions-search-items .rm-mentions-search-item:hover {
+  background-color: #bfccd6;
+}
+/* wrap overflow text in dropdown menu */
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+
+/* reference main */
+.roam-block .rm-reference-main {
+    padding: 0px 16px 12px 16px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+/* nicer looking block quote */
+:root {
+  --blockquote-font-color: rgba(109, 156, 190, 0.89);
+  --blockquote-border-color: #444;
+  --blockquote-bg: none;
+  --blockquote-cite: #777;
+}
+
+/* change highlight color, general text highlighting and block highlighting */
+
+.roam-highlight {
+        background-color: #AEFFEA;
+    }
+ .block-highlight-blue {
+            background-color: white;
+        }
+/* change loading bar to something that doesn't make me aggravated */
+
+.loading-astrolabe{
+	display: block;
+ 	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+ 	background: url(https://i.imgur.com/KWl6pqT.gif) no-repeat;
+  	width: 600px;
+  	height: 600px;
+  	padding-left: 600px; /* Equal to width of new image */
+}
+.loading-astrolabe .wand{
+	visibility: hidden;
+}
