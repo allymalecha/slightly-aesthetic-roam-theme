@@ -266,3 +266,9 @@ a.rm-alias.rm-alias-external {
 .loading-astrolabe .wand{
 	visibility: hidden;
 }
+/* path view tags at top same color as rest of background */
+.zoom-path-view .rm-zoom-mask {
+    mix-blend-mode: saturation;
+    background-color: #E2E2E2;
+    flex: 1 1 100%;
+}
