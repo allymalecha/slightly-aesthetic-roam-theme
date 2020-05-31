@@ -272,3 +272,16 @@ a.rm-alias.rm-alias-external {
     background-color: #E2E2E2;
     flex: 1 1 100%;
 }
+/* block reference background color */
+.rm-block-ref {
+    background-color:#CECBDB;
+}
+/* tag colors, add your own in data-tag to change colors */
+span.rm-page-ref[data-tag="question"] {
+    background: #7172FC;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="factcheck"] {
+    background: #21897E;
+    color: #fff;
+}
