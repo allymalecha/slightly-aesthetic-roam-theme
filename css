@@ -1,6 +1,6 @@
-/* Slighly aesthetic roam theme with teal, lavender, gray, and a fun load screen
-By Al but with a lot of help from smart individuals on Reddit
-V 1.0
+/* Slighly aesthetic roam theme that is easier on the eyes and not too complex for people who need a lot of help with CSS (i.e. me)
+By Ally but with a lot of bases from smart individuals on Reddit
+V 1.1
 */
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
@@ -266,12 +266,12 @@ a.rm-alias.rm-alias-external {
 .loading-astrolabe .wand{
 	visibility: hidden;
 }
-/* path view tags at top same color as rest of background */
 .zoom-path-view .rm-zoom-mask {
     mix-blend-mode: saturation;
     background-color: #E2E2E2;
     flex: 1 1 100%;
 }
+
 /* block reference background color */
 .rm-block-ref {
     background-color:#CECBDB;
@@ -283,5 +283,13 @@ span.rm-page-ref[data-tag="question"] {
 }
 span.rm-page-ref[data-tag="factcheck"] {
     background: #21897E;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="quote"] {
+    background: #74D3AE;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="FR"] {
+    background: #456990;
     color: #fff;
 }
