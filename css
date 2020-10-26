@@ -1,6 +1,6 @@
 /* Slighly aesthetic roam theme that is easier on the eyes and not too complex for people who need a lot of help with CSS (i.e. me)
 By Ally but with a lot of bases from smart individuals on Reddit
-V 1.0
+V 1.3
 */
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
@@ -55,7 +55,7 @@ background-color: #2C4251 !important;
 color: #58A4B0 !important;
 }
 
-/* Left side Bar Open/Close Icon color and make star icon in header a fun emoji */
+/* Left side Bar Open/Close Icon and star/calendar icons in header */
 .bp3-icon-star-empty::before {
     content: "🌟";
 }
@@ -220,14 +220,12 @@ a.rm-alias.rm-alias-external {
     padding: 20px;
 }
 
-/* Wraps text in inline search with [[]] or (()) */
-
+/*Wraps text when I'm doing an inline search with [[]] or (())*/
 .bp3-text-overflow-ellipsis {
     text-overflow: unset;
     white-space: unset;
 }
 /* hover color in search bar*/
-
 .rm-mentions-search-items .rm-mentions-search-item:hover {
   background-color: #bfccd6;
 }
@@ -238,7 +236,6 @@ a.rm-alias.rm-alias-external {
 }
 
 /* reference main */
-
 .roam-block .rm-reference-main {
     padding: 0px 16px 12px 16px;
     background-color: whitesmoke;
@@ -246,7 +243,6 @@ a.rm-alias.rm-alias-external {
 }
 
 /* nicer looking block quote */
-
 :root {
   --blockquote-font-color: rgba(109, 156, 190, 0.89);
   --blockquote-border-color: #444;
@@ -262,7 +258,7 @@ a.rm-alias.rm-alias-external {
  .block-highlight-blue {
             background-color: white;
         }
-/* change loading astrolabe to something cool
+/* change loading bar to something that doesn't make me aggravated 
 
 .loading-astrolabe{
 	display: block;
@@ -276,8 +272,6 @@ a.rm-alias.rm-alias-external {
    .loading-astrolabe .wand{
 	visibility: hidden;
 }
-*/
-
 /* block reference background color */
 .rm-block-ref {
     background-color:#CECBDB;
@@ -291,45 +285,85 @@ a.rm-alias.rm-alias-external {
 #right-sidebar #roam-right-sidebar-content {
   overflow: scroll !important;
   display: flex;
-  align-content: flex;
-
-/* Below is for masonry layout */
+    align-content: flex;
+}
+:root {
+  --right-sidebar-masonry-bg: sidebar-background;
+  --right-sidebar-masonry-outline: #d8e1e8;
+}
+#app .roam-main .roam-body-main .roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+#right-sidebar {
+  /* container */
+  background-color: right-sidebar-masonry-bg !important;
+}
+.roam-log-container .roam-log-page {
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  background-color: #1B1A23 !important;
+}
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
   flex-flow: column wrap;
 }
-#right-sidebar #roam-right-sidebar-content > div {
-  align-self: flex-start;
-  margin-right: 10px !important;
+#right-sidebar #roam-right-sidebar-content .sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  /* item */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  margin-left: 15px;
   padding: 10px;
-  border: 1px solid #bfbfbf !important;
-  background-color: #F5F5F5;
-
-/* Below is for masonry layout */
+  border-radius: 5px;
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 500px;
+  width: 600px;
+  background-color: var(--right-sidebar-masonry-bg) !important;
+  border: 1px solid var(--right-sidebar-masonry-outline) !important;
+  /* item header */
+  /* item content */
 }
-#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
+
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2) {
   resize: vertical;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 1700px;
+  max-height: 770px;
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div.flex-v-box {
+  margin-left: 0px !important;
 }
 
-/* hashtag colors, add your own words in 'data-tag' to change colors */
-span.rm-page-ref[data-tag="yourwordhere"] {
-    background: #7172FC;
-    color: #fff;
-}
-span.rm-page-ref[data-tag="yourwordhere"] {
-    background: #21897E;
-    color: #fff;
-}
-span.rm-page-ref[data-tag="yourwordhere"] {
-    background: #74D3AE;
-    color: #fff;
-}
-span.rm-page-ref[data-tag="yourwordhere"] {
-    background: #456990;
-    color: #fff;
+/* Right side bar reference boxes */
+.rm-reference-item { 
+  background-color: #2B2640;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 15px !important;
 }
