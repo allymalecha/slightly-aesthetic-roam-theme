@@ -1,6 +1,6 @@
-/* Slighly aesthetic roam theme that is easier on the eyes and not too complex for people who need a lot of help with CSS (i.e. me)
+  /* Slighly aesthetic roam theme that is easier on the eyes and not too complex for people who need a lot of help with CSS (i.e. me)
 By Ally but with a lot of bases from smart individuals on Reddit
-V 1.3
+V 1.4 with some updates
 */
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
@@ -285,7 +285,7 @@ a.rm-alias.rm-alias-external {
 #right-sidebar #roam-right-sidebar-content {
   overflow: scroll !important;
   display: flex;
-    align-content: flex;
+  align-content: flex;
 }
 :root {
   --right-sidebar-masonry-bg: sidebar-background;
@@ -297,7 +297,7 @@ a.rm-alias.rm-alias-external {
 }
 #right-sidebar {
   /* container */
-  background-color: right-sidebar-masonry-bg !important;
+  background-color: #d8e1e8 !important;
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
@@ -330,7 +330,7 @@ a.rm-alias.rm-alias-external {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 16px;
-  min-height: fit-content;
+  min-height: auto;
   width: 600px;
   background-color: var(--right-sidebar-masonry-bg) !important;
   border: 1px solid var(--right-sidebar-masonry-outline) !important;
@@ -366,69 +366,4 @@ a.rm-alias.rm-alias-external {
     border-radius: 15px;
     padding: 5px;
     margin-top: 15px !important;
-}
-/* Rainbow indentation */
-/* 
-Feel free to adjust the colors - this one loops every
-7 colors like the rainbow but you can change that to 
-cycle earlier or choose more unique colors.
-To add deeper indents:
-1. Add { > div.flex-v-box > div } incrementally to the first line, and
-2. Add {> div.flex-v-box > div:nth-child(n) } incrementally to the second line
-*/
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div {
-    border-left-color: #073642ad	!important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div,
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #cb4b16ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #6c71c4ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #2aa198ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #d33682ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #268bd2ad	 !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #FE7FBFAD !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #859900ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #d33682ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #268bd2ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #2aa198ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #cb4b16ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #859900ad !important;
-}
-#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
-.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
-    border-left-color: #6c71c4ad !important;
 }
